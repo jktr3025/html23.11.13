@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* ; 꼭 써주기 
+안 써주면 바로 다음에 오는 명령어 인식 못 함
+다음 줄 명령어는 인식 가능*/
+body{
+    height: 3000px;
+    background: gray url("../img/검은고양이.jpg") no-repeat;
+    background-position :center top;
+    background-attachment: fixed;
+}
+img {
+    width: 100px;
+    height: 200px;
+    border: double green 1px;
+}
+
+.box {
+    width: 1000px;
+    height: 1000px;
+    border: 1px teal solid;
+    background-color: yellow;
+    background-image: url("../img/고양이.jpg");
+    /* 현재 있는 css 폴더를 나와서 img 폴더를 
+들어가야함 => ../ 
+나가야하는 폴더 갯수만큼 ../ 입력해줌 */
+/* background-repeat: repeat ; default 기본값 */
+/* repeat-x / repeat-y  */
+background-repeat: no-repeat;
+/* background-size: auto; */
+/* 100% - 내가 준 w h 값에 맞춰준다는 뜻
+100% 50% - 내가 준 w h 값에 각각 가로 세로
+비율대로 나오도록 해줌
+cover -배경 이미지를 버리더라도 빈틈없이 나오도록
+cootain - 배경 이미지를 조금도 버리지 않음 */
+
+/* background-position: ;
+배경을 1개만 넣을 때 이미지를 넣을 위치를 지정하는 명령어
+left center right / top center bottom
+위아래/좌우 중에 1개만 지정해도 되고 둘 다 같이 지정해줘도 됨 
+x축 y축 위치로 지정해도 되는데 
+정확한 위치값을써도 되고 %로 지정해줘도 됨 */
+
+}

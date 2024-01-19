@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #444;
+    height: 3000px;
+}
+
+a {
+    color: inherit;
+    /* color: black; */
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+#wrap {
+    width: 1000px;
+    height: 1000px;
+    /* border: 1px solid teal; */
+    margin: 0 auto;
+}
+
+#header {
+    /* width: 100%;
+    부모인 랩의 w을 상속 받기 때문에 
+    생략가능 */
+    height: 200px;
+    border: 2px solid violet;
+    background: white url("../배경연습/img/03.png") repeat;
+    /* background-color: white;
+    background-image: url("../img/03.png");
+    background-repeat: repeat; */
+}
+
+#header h1 {
+    /* background-color: aqua; */
+    text-align: center;
+    color: violet;
+    /* h1에 글자 색을 주면 h1 속 a가 상속 받음  */
+}
+
+#header nav {
+    /* border: red 1px solid; */
+}
+
+#header nav .menu {
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+/* #header nav .menu{}에서 
+띄어쓰기는 후손관계이므로
+#header .menu{}로 적어도 됨
+부모 자식 간에만 원하면 #header > nav{}입력 */
+
+#header .menu li {
+    list-style: disc;
+    /* list-style: circle / square; */
+}
+
+#contents {
+    border: 2px solid violet;
+    height: 400px;
+    margin: 20px 0;
+    padding: 10px;
+    /* background-color: cadetblue;
+    background-image: url("../img/05.png");
+    background-repeat: no-repeat; */
+    /* background-size: 1000px 400px;
+    background-size: contain; */
+    /* background-size: cover;   */
+    /* background-position: 110% 130%;
+    background-attachment: fixed; */
+    background: cadetblue url("../배경연습/img/05.png") no-repeat fixed;
+    /* background: cadetblue url("../img/05.png") no-repeat 
+    50% 30% 포지션 / 100% 200px 사이즈 fixed; */
+}
+ㄴ
+#contents h2 {
+    color: violet;
+}
+
+.con_menu {
+    /* border: 1px solid tomato; */
+    padding-left: 50px;
+    margin: 20px 0;
+}
+
+.con_menu li {
+    list-style: decimal;
+    color: white;
+    /* border: 1px solid yellow; */
+    width: 200px;
+}
+
+/* .con_menu li:first-child {
+    background-color: hotpink;
+.con_menu li:nth-child(2){background-color: lightpink;}
+.con_menu li:nth-child(3){background-color: salmon;}
+.con_menu li:last-child {
+    background-color: darksalmon;} */
+.con_menu li:nth-child(even) {
+    background-color: darksalmon;
+}
+.con_menu li:nth-child(odd) {background-color: indianred;}
+.con_text {
+    width: 500px;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.con_text::first-letter {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+#footer{
+    border: 2px solid violet;
+height: 100px;
+padding: 10px;
+/* background-color: skyblue;
+background-image: url("../img/bg02.png");
+background-position: left bottom;
+background-repeat: repeat-x; */
+background: skyblue url("../배경연습/img/bg02.png") repeat-x left bottom;
+}
+#footer h2{
+    text-align: right;
+    color: violet;
+}
+.f_txt{
+    color: white;
+}

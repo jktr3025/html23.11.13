@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    color: #444;
+    height: 3000px;
+    font-family: 'Times New Roman', Times, serif;
+    /* serif는 글자 마디가 뾰족하게 주는 것 것 */
+    font-size: 18px;
+}
+
+#wrap {
+    width: 1000px;
+    /* height: 1000px; */
+    border: 1px solid orange;
+    margin: 10px auto;
+    /* margin: 40px 30px 20px 10px; 위 우 아 좌
+        margin: 40px 30px 20px ; 위 좌우 아
+        margin: 40px 30px ;위아 좌우
+        margin: 40px;위아좌우 */
+}
+
+.box1 {
+    height: 350px;
+    /* border: 1px solid; */
+    margin: 20px;
+    border-radius: 30px 0;
+    background: #bcbcbc url("../배경연습/img/1.png") no-repeat 400px 30px / 800px;
+    padding: 20px;
+}
+
+.box1 h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.box1 p {
+    color: white;
+    line-height: 1.8;
+    width: 60%;
+    text-align: justify;
+}
+
+.box2 {
+    height: 125px;
+    margin: 20px;
+    background: rgb(211, 140, 176) url("../배경연습/img/4.png") no-repeat;
+    border-radius: 30px 0;
+    margin: 0 20px 20px;
+}
+
+.box2 h1{
+    text-align: right;
+    color: white;
+    font-size: 50px; 
+    margin: 20px;
+    text-transform: uppercase;
+}
+.box3{
+    height: 125px;
+    background: url("../배경연습/img/02.jpg") repeat;
+    background-attachment: fixed;
+}
+.box4{
+    /* border: 1px solid blue; */
+    margin: 20px 20px 0 20px;
+}
+.box4 h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.box4 ul{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.box4 ul li {
+    /* border: 1px solid teal; */
+    width: calc(100% / 3 - 10px);
+    height: 200px;
+    display: inline-block;
+    background-image: url("../배경연습/img/03.jpg");
+    background-size: cover;
+    border-radius: 30px 0;
+    margin-bottom: 20px;
+}

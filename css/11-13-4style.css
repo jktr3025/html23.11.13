@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+list-style: none;
+}
+body{height: 3000px;}
+.wrap {
+    width: 1000px;
+    /* height: 1000px; */
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.con01 {
+    height: 350px;
+    border-radius: 30px 0;
+    margin: 20px;
+    padding: 20px;
+    /* background-color: #d5d5d5;
+    background-image: url("/배경연습/img/1.png");
+    background-position : 450px 15px ;
+    background-repeat: no-repeat;
+    background-size: 800px; */
+    background: #d5d5d5 url("../배경연습/img/1.png") no-repeat 450px 15px / 800px;
+}
+
+.con01 h1 {
+    color: white;
+    text-transform: uppercase;
+    /* text-transform:uppercase 전부 대문자로 바꿔주기
+    text-transform:lowercase 전부 소문자로 바꿔주기
+    text-transform:capitalize 제일 앞글자만 대문자로 시작하도록하기*/
+}
+
+.con01 p {
+    color: white;
+    width: 50%;
+    /* height: 100px;
+overflow: hidden; */
+    line-height: 1.5;
+    text-align: justify;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.con02 {
+    border-radius: 30px 0;
+    height: 125px;
+    background: rgba(255, 0, 0, 0.516) url("../배경연습/img/4.png") no-repeat;
+    margin: 20px;
+    padding: 20px;
+}
+
+.con02 h1 {
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.con03 {
+    background: url("../배경연습/img/02.jpg");
+    height: 135px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.con04 {
+    height: 500px;
+    padding: 20px;
+    
+}
+
+.con04 h1 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.con04 div{
+    /* border: 1px solid yellow; */
+    text-align: center;
+}
+/* .con04 img{
+width: calc(100%/ 3 - 10px);    
+border-radius: 30px 0;
+display: inline-block;
+} */
+.con04 ul li{
+    /*  border: 1px solid black;*/
+    width: calc(100% / 3 - 10px);
+    display: inline-block;
+    height: 200px;
+    background: url("../배경연습/img/03.jpg") no-repeat left top / cover ; 
+border-radius: 30px 0;
+} 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외부 css 연습</title>
+    <link rel="stylesheet" href="css/11-3-1style.css">
+    <!-- 스타일 줄 css 파일 따로 만들어줘서 연결  -->
+    <!-- css 적용 우선 순위 => 인라인- 내부 -외부 -->
+<style type="text/css">
+    .box{
+        background-color: green;
+    }
+</style>
+</head>
+
+<body>
+    <h1 class="head" style="color: darkmagenta;">header-1</h1>
+    <div class="box" style="background-color: aqua;">box</div>
+    <p class="p_1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Expedita sequi blanditiis quas nam modi placeat voluptate excepturi.
+        optio veritatis minima quis, mollitia quia tempore deleniti hic.
+        ipsum quae asperiores incidunt?</p>
+</body>
+
+</html> 

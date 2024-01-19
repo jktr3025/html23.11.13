@@ -1,0 +1,17 @@
+@charset "utf-8" ;
+/* css 에는 태그가로가 들어오지 않음 */
+*{ margin: 0;padding: 0;}
+.head{
+    color: blue; font-weight: 100;
+}
+
+.box{width: 200px;height: 300px;
+    background-color: brown;
+}
+
+.p_1{
+    width: 50%; 
+    text-align: justify;
+    /* justify : 양쪽정렬 */
+    line-height: 1.5;
+}

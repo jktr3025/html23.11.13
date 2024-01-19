@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.box1 {
+    border: 1px solid black;
+}
+
+.box1 span,
+.box1 p {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 10px;
+}
+.box1 span:nth-child(1){
+    background-color: red;
+}
+/* .box1 span:nth-child(2){
+    background-color: blue;}
+:nth-child()는 태그 구분 없이 찾아 주는데 
+nth-child(2)랑 span을 만족하는  아이를 찾을 수 없어서
+아무 값도 안 바뀜 */
+.box1 span:nth-of-type(2){
+    background-color: brown;
+}
+.box1 p:nth-of-type(2){
+    background-color: pink;
+}
+.box1 p:nth-of-type(1){
+    background-color: pink;
+}
+.box1 p:nth-last-of-type(1){
+    background-color: darkgreen;
+}
+.list{
+    border: 1px solid yellow;
+    margin: 50px 0;
+    padding: 0;
+}
+.list li{
+    list-style: none;
+    border: 1px solid red;
+width: 50px;height: 50px;
+display: inline-block;
+margin: 20px 10px;
+text-align: center;
+line-height: 50px;
+background-color: blueviolet;
+}
+.list li:last-child{
+    background-color: beige;
+}
+.list li:nth-of-type(3){
+    background-color: brown;
+}
+.list li:nth-child(even){
+    background-color: cadetblue;
+}
+.list li:nth-child(odd){
+    background-color: chartreuse;
+}
+.list li:nth-child(2n+1){
+    background-color: pink;}
+    /* n=0일 때의 계산값 순번대로 배경색을 입혀줌 */
+
+
